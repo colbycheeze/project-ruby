@@ -19,6 +19,35 @@
 
 require "pig_latin"
 
+describe "#isVowel" do
+
+  it "returns true for a vowel" do
+    isVowel("a").should == true
+  end
+
+  it "returns false for a non vowel" do
+    isVowel("b").should == false
+  end
+
+end
+
+describe "#isConsonants" do
+
+  it "returns true if letter is a consanant" do
+    isConsanants("b").should be true
+  end
+
+  it "returns true if all letters are consanants" do
+    isConsanants("thr").should be true
+  end
+
+  it "returns false if letters contain a vowel" do
+    isConsanants("che")
+  end
+  
+end
+
+
 describe "#translate" do
 
   it "translates a word beginning with a vowel" do
