@@ -42,9 +42,9 @@ describe "#isConsonants" do
   end
 
   it "returns false if letters contain a vowel" do
-    isConsanants("che")
+    isConsanants("che").should be false
   end
-  
+
 end
 
 
